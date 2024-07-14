@@ -135,3 +135,4 @@ D:\.NET\Run Partner\Run Partner\obj\Debug\net8.0\refint\Run Partner.dll
 D:\.NET\Run Partner\Run Partner\obj\Debug\net8.0\Run Partner.pdb
 D:\.NET\Run Partner\Run Partner\obj\Debug\net8.0\Run Partner.genruntimeconfig.cache
 D:\.NET\Run Partner\Run Partner\obj\Debug\net8.0\ref\Run Partner.dll
+D:\.NET\Run Partner\Run Partner\obj\Debug\net8.0\Run Partner.sourcelink.json

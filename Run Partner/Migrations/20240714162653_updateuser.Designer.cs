@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Run_Partner.Data;
 
@@ -11,9 +12,11 @@ using Run_Partner.Data;
 namespace Run_Partner.Migrations
 {
     [DbContext(typeof(RunPartnerDbContext))]
-    partial class RunPartnerDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240714162653_updateuser")]
+    partial class updateuser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

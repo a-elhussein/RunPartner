@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\.NET\\Run Partner\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|d:\\.net\\run partner\\run partner\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|solutionrelative:run partner\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|d:\\.net\\run partner\\run partner\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|solutionrelative:run partner\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|d:\\.net\\run partner\\run partner\\data\\runpartnerdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|solutionrelative:run partner\\data\\runpartnerdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|d:\\.net\\run partner\\run partner\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|solutionrelative:run partner\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|d:\\.net\\run partner\\run partner\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|solutionrelative:run partner\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|d:\\.net\\run partner\\run partner\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,40 +39,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RunPartnerDbContext.cs",
-              "DocumentMoniker": "D:\\.NET\\Run Partner\\Run Partner\\Data\\RunPartnerDbContext.cs",
-              "RelativeDocumentMoniker": "Run Partner\\Data\\RunPartnerDbContext.cs",
-              "ToolTip": "D:\\.NET\\Run Partner\\Run Partner\\Data\\RunPartnerDbContext.cs",
-              "RelativeToolTip": "Run Partner\\Data\\RunPartnerDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "D:\\.NET\\Run Partner\\Run Partner\\DTOs\\LoginDto.cs",
+              "RelativeDocumentMoniker": "Run Partner\\DTOs\\LoginDto.cs",
+              "ToolTip": "D:\\.NET\\Run Partner\\Run Partner\\DTOs\\LoginDto.cs",
+              "RelativeToolTip": "Run Partner\\DTOs\\LoginDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-12T15:18:24.899Z",
+              "WhenOpened": "2024-07-14T17:28:02.678Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "D:\\.NET\\Run Partner\\Run Partner\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "Run Partner\\Controllers\\UsersController.cs",
-              "ToolTip": "D:\\.NET\\Run Partner\\Run Partner\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "Run Partner\\Controllers\\UsersController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAhAAAA",
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "D:\\.NET\\Run Partner\\Run Partner\\DTOs\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "Run Partner\\DTOs\\RegisterDto.cs",
+              "ToolTip": "D:\\.NET\\Run Partner\\Run Partner\\DTOs\\RegisterDto.cs",
+              "RelativeToolTip": "Run Partner\\DTOs\\RegisterDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-12T15:01:13.173Z",
+              "WhenOpened": "2024-07-14T17:13:24.597Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AppUser.cs",
-              "DocumentMoniker": "D:\\.NET\\Run Partner\\Run Partner\\Models\\AppUser.cs",
-              "RelativeDocumentMoniker": "Run Partner\\Models\\AppUser.cs",
-              "ToolTip": "D:\\.NET\\Run Partner\\Run Partner\\Models\\AppUser.cs",
-              "RelativeToolTip": "Run Partner\\Models\\AppUser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\.NET\\Run Partner\\Run Partner\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Run Partner\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\.NET\\Run Partner\\Run Partner\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Run Partner\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAYwBQAAABQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-12T14:33:44.521Z",
+              "WhenOpened": "2024-07-14T16:37:48.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\.NET\\Run Partner\\Run Partner\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Run Partner\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\.NET\\Run Partner\\Run Partner\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Run Partner\\Controllers\\UsersController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T16:29:08.536Z",
               "EditorCaption": ""
             }
           ]

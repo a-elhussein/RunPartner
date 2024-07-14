@@ -10,8 +10,7 @@ namespace Run_Partner.Controllers
 	[ApiController]
 	public class UsersController(RunPartnerDbContext context) : ControllerBase
 	{
-		//Remove all comments later !!!!!!!!
-		//Get A list Of All Users 
+
 		[HttpGet]
 		[Route("GetAll")]
 		public async Task<ActionResult<AppUser>> GetUsers() 
@@ -22,7 +21,6 @@ namespace Run_Partner.Controllers
 
 		}
 
-		//Get User By Id
 		[HttpGet]
 		[Route("{id:guid}")]
 
