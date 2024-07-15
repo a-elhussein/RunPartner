@@ -6,6 +6,8 @@ NZWalks API is a backend API built to manage walks in different regions of New Z
 # Technologies Used
 - ASP.NET Core: The API is built using ASP.NET Core framework, which provides a powerful and flexible platform for building web applications and APIs.
 
+- Angular 18: The Application is built using Angular for the front end UI. 
+
 - Entity Framework Core: Entity Framework Core is used as the Object-Relational Mapping (ORM) tool to interact with the database.
 
 - Microsoft Identity: The API uses Microsoft Identity for user authentication and role-based authorization.
