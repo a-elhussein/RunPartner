@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "D:\\.NET\\Run Partner\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|d:\\.net\\run partner\\run partner\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|solutionrelative:run partner\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|d:\\.net\\run partner\\run partner\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|solutionrelative:run partner\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|d:\\.net\\run partner\\run partner\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|solutionrelative:run partner\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|d:\\.net\\run partner\\run partner\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|solutionrelative:run partner\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|d:\\.net\\run partner\\run partner\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|solutionrelative:run partner\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|d:\\.net\\run partner\\run partner\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|solutionrelative:run partner\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|d:\\.net\\run partner\\run partner\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|solutionrelative:run partner\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|d:\\.net\\run partner\\run partner\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|solutionrelative:run partner\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,54 +42,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginDto.cs",
-              "DocumentMoniker": "D:\\.NET\\Run Partner\\Run Partner\\DTOs\\LoginDto.cs",
-              "RelativeDocumentMoniker": "Run Partner\\DTOs\\LoginDto.cs",
-              "ToolTip": "D:\\.NET\\Run Partner\\Run Partner\\DTOs\\LoginDto.cs",
-              "RelativeToolTip": "Run Partner\\DTOs\\LoginDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T17:28:02.678Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RegisterDto.cs",
-              "DocumentMoniker": "D:\\.NET\\Run Partner\\Run Partner\\DTOs\\RegisterDto.cs",
-              "RelativeDocumentMoniker": "Run Partner\\DTOs\\RegisterDto.cs",
-              "ToolTip": "D:\\.NET\\Run Partner\\Run Partner\\DTOs\\RegisterDto.cs",
-              "RelativeToolTip": "Run Partner\\DTOs\\RegisterDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T17:13:24.597Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\.NET\\Run Partner\\Run Partner\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Run Partner\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\.NET\\Run Partner\\Run Partner\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Run Partner\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAYwBQAAABQAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\.NET\\Run Partner\\Run Partner\\Program.cs",
+              "RelativeDocumentMoniker": "Run Partner\\Program.cs",
+              "ToolTip": "D:\\.NET\\Run Partner\\Run Partner\\Program.cs",
+              "RelativeToolTip": "Run Partner\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T16:37:48.001Z",
+              "WhenOpened": "2024-07-15T17:20:58.973Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "UsersController.cs",
               "DocumentMoniker": "D:\\.NET\\Run Partner\\Run Partner\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Run Partner\\Controllers\\UsersController.cs",
               "ToolTip": "D:\\.NET\\Run Partner\\Run Partner\\Controllers\\UsersController.cs",
               "RelativeToolTip": "Run Partner\\Controllers\\UsersController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAADAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T16:29:08.536Z",
+              "WhenOpened": "2024-07-15T17:19:28.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "D:\\.NET\\Run Partner\\Run Partner\\DTOs\\UserDto.cs",
+              "RelativeDocumentMoniker": "Run Partner\\DTOs\\UserDto.cs",
+              "ToolTip": "D:\\.NET\\Run Partner\\Run Partner\\DTOs\\UserDto.cs",
+              "RelativeToolTip": "Run Partner\\DTOs\\UserDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T17:10:47.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\.NET\\Run Partner\\Run Partner\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Run Partner\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\.NET\\Run Partner\\Run Partner\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Run Partner\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAlwD8AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T16:29:07.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "D:\\.NET\\Run Partner\\Run Partner\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "Run Partner\\Services\\TokenService.cs",
+              "ToolTip": "D:\\.NET\\Run Partner\\Run Partner\\Services\\TokenService.cs",
+              "RelativeToolTip": "Run Partner\\Services\\TokenService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T16:19:37.204Z",
               "EditorCaption": ""
             }
           ]

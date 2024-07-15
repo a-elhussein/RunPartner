@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Run_Partner.Data;
 using Run_Partner.DTOs;
+using Run_Partner.Interfaces;
 using Run_Partner.Models;
 using System.Security.Cryptography;
 using System.Text;
@@ -11,7 +12,7 @@ namespace Run_Partner.Controllers
 {
 	[Route("api/[controller]")]
 	[ApiController]
-	public class AccountController(RunPartnerDbContext dbContext) : ControllerBase
+	public class AccountController(RunPartnerDbContext dbContext, ITokenService tokenService) : ControllerBase
 	{
 		private readonly RunPartnerDbContext dbContext = dbContext;
 
@@ -41,7 +42,7 @@ namespace Run_Partner.Controllers
 		// /api/Account/Login
 		[HttpPost]
 		[Route("Login")]
-		public async Task<IActionResult> Login([FromBody] LoginDto loginDto) 
+		public async Task<ActionResult<UserDto>> Login([FromBody] LoginDto loginDto) 
 		{
 			var user = await dbContext.Users.FirstOrDefaultAsync(x => x.UserName == loginDto.Username.ToLower());
 			if (user == null) 
@@ -60,7 +61,11 @@ namespace Run_Partner.Controllers
 				}
 			}
 
-			return Ok(user);
+			return new UserDto 
+			{
+				Username = loginDto.Username,
+				Token = tokenService.CreateToken(user)
+			};
 		}
 
 

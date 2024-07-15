@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Run_Partner.Data;
@@ -10,7 +11,7 @@ namespace Run_Partner.Controllers
 	[ApiController]
 	public class UsersController(RunPartnerDbContext context) : ControllerBase
 	{
-
+		
 		[HttpGet]
 		[Route("GetAll")]
 		public async Task<ActionResult<AppUser>> GetUsers() 
@@ -21,6 +22,7 @@ namespace Run_Partner.Controllers
 
 		}
 
+		[Authorize]
 		[HttpGet]
 		[Route("{id:guid}")]
 
