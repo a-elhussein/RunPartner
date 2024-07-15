@@ -1,7 +1,7 @@
 
 # Run Partner
 
-NZWalks API is a full stack web application built by using .NET API for the backend and Angular for the frontend built to help people start their own mini marathons!
+RunPartner is a full stack web application built by using .NET API for the backend and Angular for the frontend built to help people start their own mini marathons!
 
 # Technologies Used
 - ASP.NET Core: The API is built using ASP.NET Core framework, which provides a powerful and flexible platform for building web applications and APIs.
