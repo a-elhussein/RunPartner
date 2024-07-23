@@ -4,6 +4,7 @@ using Microsoft.IdentityModel.Tokens;
 using Run_Partner.Data;
 using Run_Partner.Extensions;
 using Run_Partner.Interfaces;
+using Run_Partner.Middleware;
 using Run_Partner.Services;
 using System.Text;
 
@@ -16,7 +17,7 @@ builder.Services.AddIdentityServices(builder.Configuration);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-
+app.UseMiddleware<ExceptionMiddelware>();
 app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:4200", "https://localhost:4200"));
 
 
