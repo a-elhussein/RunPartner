@@ -25,7 +25,7 @@ namespace Run_Partner.Middleware
 
 				var options = new JsonSerializerOptions
 				{
-					PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+					PropertyNamingPolicy = JsonNamingPolicy.CamelCase
 				};
 
 				var json = JsonSerializer.Serialize(response, options);
