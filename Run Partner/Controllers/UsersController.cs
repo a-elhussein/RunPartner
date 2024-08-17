@@ -1,35 +1,41 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Run_Partner.Data;
+using Run_Partner.DTOs;
+using Run_Partner.Interfaces;
 using Run_Partner.Models;
 
 namespace Run_Partner.Controllers
 {
 	[Route("api/[controller]")]
 	[ApiController]
-	public class UsersController(RunPartnerDbContext context) : ControllerBase
+	[Authorize]
+	public class UsersController(IUserRepository userRepository) : ControllerBase
 	{
 		
 		[HttpGet]
 		[Route("GetAll")]
-		public async Task<ActionResult<AppUser>> GetUsers() 
+		public async Task<ActionResult<IEnumerable<MemberDto>>> GetUsers() 
 		{
-			var users = await context.Users.ToListAsync();
+			var users = await userRepository.GetMembersAsync();
 
 			return Ok(users);
 
 		}
 
-		[Authorize]
 		[HttpGet]
-		[Route("{id:guid}")]
+		[Route("{username}")]
 
-		public async Task<ActionResult<AppUser>> GetUser([FromRoute] Guid id) 
+		public async Task<ActionResult<MemberDto>> GetUser(string username) 
 		{
-			var user = await context.Users.FirstOrDefaultAsync(x => x.Id == id);
-			return Ok(user);
+			var user = await userRepository.GetMemberAsync(username);
+
+			if (user == null) return NotFound(); 
+
+			return user;
 		}
 
 		

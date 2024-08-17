@@ -19,25 +19,25 @@ namespace Run_Partner.Controllers
 		// /api/account/Register
 		[HttpPost]
 		[Route("Register")]
-		public async Task<IActionResult> Register([FromBody] RegisterDto registerDto) 
+		public async Task<IActionResult> Register([FromBody] RegisterDto registerDto)
 		{
-			if (await UserExistCheck(registerDto.Username)) 
-			{
-				return BadRequest("User Exists!");
-			}
-			using var hmac = new HMACSHA512();
+			if (await UserExistCheck(registerDto.Username)) return BadRequest("UsernameTaken");
 
-			var user = new AppUser
-			{
-				UserName = registerDto.Username.ToLower(),
-				PasswordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(registerDto.Password)),
-				PasswordSalt = hmac.Key
-			};
+			return Ok();
+		}	
+		//	using var hmac = new HMACSHA512();
 
-			dbContext.Users.Add(user);
-			await dbContext.SaveChangesAsync();
-			return Ok(user);
-		}
+		//	var user = new AppUser
+		//	{
+		//		UserName = registerDto.Username.ToLower(),
+		//		PasswordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(registerDto.Password)),
+		//		PasswordSalt = hmac.Key
+		//	};
+
+		//	dbContext.Users.Add(user);
+		//	await dbContext.SaveChangesAsync();
+		//	return Ok(user);
+		//}
 
 		// /api/Account/Login
 		[HttpPost]

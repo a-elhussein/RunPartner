@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Run_Partner.Data;
 
@@ -11,9 +12,11 @@ using Run_Partner.Data;
 namespace Run_Partner.Migrations
 {
     [DbContext(typeof(RunPartnerDbContext))]
-    partial class RunPartnerDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240814163557_users added")]
+    partial class usersadded
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -92,8 +95,8 @@ namespace Run_Partner.Migrations
                             KnownAs = "Rosetta",
                             LastActive = new DateTime(2024, 10, 21, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             LookingFor = "In velit aliqua aute sint duis deserunt dolore nostrud consequat aute fugiat non. Nisi adipisicing magna qui est adipisicing elit quis sunt labore ut. Dolore ullamco nisi enim proident dolor eu. Exercitation enim deserunt esse do nostrud ex officia nisi et pariatur excepteur anim sit. Laboris sunt aliquip sunt sit sint sunt amet voluptate occaecat. Fugiat pariatur nisi deserunt aliquip exercitation culpa ullamco excepteur.\r\n",
-                            PasswordHash = new byte[] { 56, 198, 119, 175, 165, 243, 108, 38, 152, 192, 32, 107, 100, 39, 110, 141, 5, 136, 24, 176, 117, 87, 136, 57, 238, 9, 170, 85, 168, 115, 110, 191, 177, 251, 193, 220, 140, 224, 159, 30, 49, 134, 75, 237, 234, 89, 122, 170, 153, 26, 82, 123, 87, 33, 247, 147, 112, 79, 0, 124, 125, 125, 144, 147 },
-                            PasswordSalt = new byte[] { 53, 135, 166, 130, 107, 233, 222, 115, 63, 103, 195, 238, 23, 48, 108, 185, 234, 189, 49, 107, 56, 95, 25, 63, 162, 35, 10, 146, 185, 192, 247, 228, 140, 153, 78, 81, 72, 47, 124, 137, 11, 9, 121, 89, 87, 105, 108, 46, 28, 125, 74, 225, 9, 213, 7, 156, 53, 125, 118, 182, 119, 233, 27, 95, 118, 118, 243, 140, 229, 118, 37, 47, 155, 100, 179, 213, 33, 33, 180, 125, 244, 213, 52, 10, 76, 31, 80, 202, 96, 70, 51, 160, 148, 110, 67, 237, 13, 50, 41, 44, 8, 117, 135, 199, 170, 199, 147, 149, 94, 46, 77, 223, 170, 163, 144, 99, 26, 186, 50, 93, 151, 216, 246, 140, 176, 215, 226, 64 },
+                            PasswordHash = new byte[] { 192, 22, 160, 209, 46, 155, 228, 105, 183, 200, 84, 65, 56, 130, 100, 230, 170, 78, 179, 73, 135, 161, 99, 251, 166, 32, 199, 12, 98, 167, 130, 105, 108, 105, 52, 168, 44, 206, 79, 149, 19, 103, 218, 160, 97, 108, 69, 74, 255, 179, 125, 87, 49, 52, 75, 238, 228, 164, 14, 101, 110, 93, 123, 184 },
+                            PasswordSalt = new byte[] { 120, 69, 127, 25, 82, 57, 163, 151, 151, 210, 92, 245, 90, 172, 206, 120, 115, 61, 86, 237, 54, 253, 225, 32, 240, 180, 159, 46, 42, 131, 128, 127, 119, 18, 128, 107, 233, 120, 59, 109, 6, 65, 80, 1, 21, 250, 99, 62, 51, 104, 216, 112, 75, 39, 200, 203, 225, 54, 109, 152, 252, 12, 80, 210, 80, 26, 139, 86, 102, 183, 247, 85, 172, 104, 81, 163, 226, 227, 131, 232, 145, 93, 102, 171, 249, 209, 1, 183, 198, 214, 218, 95, 178, 154, 199, 164, 65, 12, 118, 118, 119, 63, 89, 166, 159, 54, 152, 238, 11, 204, 84, 216, 126, 109, 110, 132, 161, 86, 75, 5, 24, 77, 25, 19, 118, 239, 223, 209 },
                             UserName = "Rosetta"
                         },
                         new
@@ -108,8 +111,8 @@ namespace Run_Partner.Migrations
                             KnownAs = "Sasha",
                             LastActive = new DateTime(2022, 3, 13, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             LookingFor = "Laboris aliquip exercitation pariatur laborum veniam cillum est eiusmod. Elit enim aliquip ex qui mollit et Lorem voluptate reprehenderit dolore Lorem Lorem cillum quis. Quis eiusmod ea duis minim non voluptate quis Lorem. Velit nulla quis ullamco incididunt non ad ea do ad incididunt mollit ut ad magna. Dolor cupidatat ad exercitation consequat exercitation aute et adipisicing amet ipsum dolore consequat esse. Minim do laborum ullamco consequat proident aliqua incididunt nulla.\r\n",
-                            PasswordHash = new byte[] { 56, 198, 119, 175, 165, 243, 108, 38, 152, 192, 32, 107, 100, 39, 110, 141, 5, 136, 24, 176, 117, 87, 136, 57, 238, 9, 170, 85, 168, 115, 110, 191, 177, 251, 193, 220, 140, 224, 159, 30, 49, 134, 75, 237, 234, 89, 122, 170, 153, 26, 82, 123, 87, 33, 247, 147, 112, 79, 0, 124, 125, 125, 144, 147 },
-                            PasswordSalt = new byte[] { 53, 135, 166, 130, 107, 233, 222, 115, 63, 103, 195, 238, 23, 48, 108, 185, 234, 189, 49, 107, 56, 95, 25, 63, 162, 35, 10, 146, 185, 192, 247, 228, 140, 153, 78, 81, 72, 47, 124, 137, 11, 9, 121, 89, 87, 105, 108, 46, 28, 125, 74, 225, 9, 213, 7, 156, 53, 125, 118, 182, 119, 233, 27, 95, 118, 118, 243, 140, 229, 118, 37, 47, 155, 100, 179, 213, 33, 33, 180, 125, 244, 213, 52, 10, 76, 31, 80, 202, 96, 70, 51, 160, 148, 110, 67, 237, 13, 50, 41, 44, 8, 117, 135, 199, 170, 199, 147, 149, 94, 46, 77, 223, 170, 163, 144, 99, 26, 186, 50, 93, 151, 216, 246, 140, 176, 215, 226, 64 },
+                            PasswordHash = new byte[] { 192, 22, 160, 209, 46, 155, 228, 105, 183, 200, 84, 65, 56, 130, 100, 230, 170, 78, 179, 73, 135, 161, 99, 251, 166, 32, 199, 12, 98, 167, 130, 105, 108, 105, 52, 168, 44, 206, 79, 149, 19, 103, 218, 160, 97, 108, 69, 74, 255, 179, 125, 87, 49, 52, 75, 238, 228, 164, 14, 101, 110, 93, 123, 184 },
+                            PasswordSalt = new byte[] { 120, 69, 127, 25, 82, 57, 163, 151, 151, 210, 92, 245, 90, 172, 206, 120, 115, 61, 86, 237, 54, 253, 225, 32, 240, 180, 159, 46, 42, 131, 128, 127, 119, 18, 128, 107, 233, 120, 59, 109, 6, 65, 80, 1, 21, 250, 99, 62, 51, 104, 216, 112, 75, 39, 200, 203, 225, 54, 109, 152, 252, 12, 80, 210, 80, 26, 139, 86, 102, 183, 247, 85, 172, 104, 81, 163, 226, 227, 131, 232, 145, 93, 102, 171, 249, 209, 1, 183, 198, 214, 218, 95, 178, 154, 199, 164, 65, 12, 118, 118, 119, 63, 89, 166, 159, 54, 152, 238, 11, 204, 84, 216, 126, 109, 110, 132, 161, 86, 75, 5, 24, 77, 25, 19, 118, 239, 223, 209 },
                             UserName = "Sasha"
                         },
                         new
@@ -124,8 +127,8 @@ namespace Run_Partner.Migrations
                             KnownAs = "Cherie",
                             LastActive = new DateTime(2023, 7, 30, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             LookingFor = "Eu sint enim laborum nisi nostrud do cillum adipisicing enim voluptate sunt velit. Excepteur amet ut aliqua excepteur dolor non ipsum aute anim ex proident consequat aliquip. Ex anim excepteur minim veniam eiusmod adipisicing. Exercitation magna aliquip excepteur esse et deserunt fugiat labore. Nostrud ex magna cupidatat magna ullamco dolore veniam anim. Cupidatat pariatur adipisicing veniam proident duis.\r\n",
-                            PasswordHash = new byte[] { 56, 198, 119, 175, 165, 243, 108, 38, 152, 192, 32, 107, 100, 39, 110, 141, 5, 136, 24, 176, 117, 87, 136, 57, 238, 9, 170, 85, 168, 115, 110, 191, 177, 251, 193, 220, 140, 224, 159, 30, 49, 134, 75, 237, 234, 89, 122, 170, 153, 26, 82, 123, 87, 33, 247, 147, 112, 79, 0, 124, 125, 125, 144, 147 },
-                            PasswordSalt = new byte[] { 53, 135, 166, 130, 107, 233, 222, 115, 63, 103, 195, 238, 23, 48, 108, 185, 234, 189, 49, 107, 56, 95, 25, 63, 162, 35, 10, 146, 185, 192, 247, 228, 140, 153, 78, 81, 72, 47, 124, 137, 11, 9, 121, 89, 87, 105, 108, 46, 28, 125, 74, 225, 9, 213, 7, 156, 53, 125, 118, 182, 119, 233, 27, 95, 118, 118, 243, 140, 229, 118, 37, 47, 155, 100, 179, 213, 33, 33, 180, 125, 244, 213, 52, 10, 76, 31, 80, 202, 96, 70, 51, 160, 148, 110, 67, 237, 13, 50, 41, 44, 8, 117, 135, 199, 170, 199, 147, 149, 94, 46, 77, 223, 170, 163, 144, 99, 26, 186, 50, 93, 151, 216, 246, 140, 176, 215, 226, 64 },
+                            PasswordHash = new byte[] { 192, 22, 160, 209, 46, 155, 228, 105, 183, 200, 84, 65, 56, 130, 100, 230, 170, 78, 179, 73, 135, 161, 99, 251, 166, 32, 199, 12, 98, 167, 130, 105, 108, 105, 52, 168, 44, 206, 79, 149, 19, 103, 218, 160, 97, 108, 69, 74, 255, 179, 125, 87, 49, 52, 75, 238, 228, 164, 14, 101, 110, 93, 123, 184 },
+                            PasswordSalt = new byte[] { 120, 69, 127, 25, 82, 57, 163, 151, 151, 210, 92, 245, 90, 172, 206, 120, 115, 61, 86, 237, 54, 253, 225, 32, 240, 180, 159, 46, 42, 131, 128, 127, 119, 18, 128, 107, 233, 120, 59, 109, 6, 65, 80, 1, 21, 250, 99, 62, 51, 104, 216, 112, 75, 39, 200, 203, 225, 54, 109, 152, 252, 12, 80, 210, 80, 26, 139, 86, 102, 183, 247, 85, 172, 104, 81, 163, 226, 227, 131, 232, 145, 93, 102, 171, 249, 209, 1, 183, 198, 214, 218, 95, 178, 154, 199, 164, 65, 12, 118, 118, 119, 63, 89, 166, 159, 54, 152, 238, 11, 204, 84, 216, 126, 109, 110, 132, 161, 86, 75, 5, 24, 77, 25, 19, 118, 239, 223, 209 },
                             UserName = "Cherie"
                         },
                         new
@@ -140,8 +143,8 @@ namespace Run_Partner.Migrations
                             KnownAs = "Josie",
                             LastActive = new DateTime(2021, 11, 4, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             LookingFor = "Anim id eiusmod exercitation aliqua non reprehenderit culpa ea veniam aliquip culpa officia adipisicing. Sunt in velit fugiat laboris pariatur dolore officia proident et cillum excepteur. Occaecat nostrud id sit enim esse proident fugiat ipsum elit eu exercitation mollit mollit nulla. Aute irure consectetur do reprehenderit id. Cillum mollit ex tempor ea minim cupidatat aute fugiat Lorem id reprehenderit ut laborum deserunt. Adipisicing consectetur labore ad officia nisi consectetur.\r\n",
-                            PasswordHash = new byte[] { 56, 198, 119, 175, 165, 243, 108, 38, 152, 192, 32, 107, 100, 39, 110, 141, 5, 136, 24, 176, 117, 87, 136, 57, 238, 9, 170, 85, 168, 115, 110, 191, 177, 251, 193, 220, 140, 224, 159, 30, 49, 134, 75, 237, 234, 89, 122, 170, 153, 26, 82, 123, 87, 33, 247, 147, 112, 79, 0, 124, 125, 125, 144, 147 },
-                            PasswordSalt = new byte[] { 53, 135, 166, 130, 107, 233, 222, 115, 63, 103, 195, 238, 23, 48, 108, 185, 234, 189, 49, 107, 56, 95, 25, 63, 162, 35, 10, 146, 185, 192, 247, 228, 140, 153, 78, 81, 72, 47, 124, 137, 11, 9, 121, 89, 87, 105, 108, 46, 28, 125, 74, 225, 9, 213, 7, 156, 53, 125, 118, 182, 119, 233, 27, 95, 118, 118, 243, 140, 229, 118, 37, 47, 155, 100, 179, 213, 33, 33, 180, 125, 244, 213, 52, 10, 76, 31, 80, 202, 96, 70, 51, 160, 148, 110, 67, 237, 13, 50, 41, 44, 8, 117, 135, 199, 170, 199, 147, 149, 94, 46, 77, 223, 170, 163, 144, 99, 26, 186, 50, 93, 151, 216, 246, 140, 176, 215, 226, 64 },
+                            PasswordHash = new byte[] { 192, 22, 160, 209, 46, 155, 228, 105, 183, 200, 84, 65, 56, 130, 100, 230, 170, 78, 179, 73, 135, 161, 99, 251, 166, 32, 199, 12, 98, 167, 130, 105, 108, 105, 52, 168, 44, 206, 79, 149, 19, 103, 218, 160, 97, 108, 69, 74, 255, 179, 125, 87, 49, 52, 75, 238, 228, 164, 14, 101, 110, 93, 123, 184 },
+                            PasswordSalt = new byte[] { 120, 69, 127, 25, 82, 57, 163, 151, 151, 210, 92, 245, 90, 172, 206, 120, 115, 61, 86, 237, 54, 253, 225, 32, 240, 180, 159, 46, 42, 131, 128, 127, 119, 18, 128, 107, 233, 120, 59, 109, 6, 65, 80, 1, 21, 250, 99, 62, 51, 104, 216, 112, 75, 39, 200, 203, 225, 54, 109, 152, 252, 12, 80, 210, 80, 26, 139, 86, 102, 183, 247, 85, 172, 104, 81, 163, 226, 227, 131, 232, 145, 93, 102, 171, 249, 209, 1, 183, 198, 214, 218, 95, 178, 154, 199, 164, 65, 12, 118, 118, 119, 63, 89, 166, 159, 54, 152, 238, 11, 204, 84, 216, 126, 109, 110, 132, 161, 86, 75, 5, 24, 77, 25, 19, 118, 239, 223, 209 },
                             UserName = "Josie"
                         },
                         new
@@ -156,8 +159,8 @@ namespace Run_Partner.Migrations
                             KnownAs = "Eugenia",
                             LastActive = new DateTime(2021, 9, 8, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             LookingFor = "Sit Lorem non adipisicing aute reprehenderit. Aute sunt consequat officia ullamco cupidatat ex laborum sunt exercitation qui nulla tempor mollit. Exercitation Lorem adipisicing sit occaecat cillum irure. Sint esse ea ex quis eu. Officia eu et ea minim reprehenderit excepteur pariatur aliquip culpa ullamco aute. Anim incididunt exercitation magna enim aute Lorem id culpa consequat adipisicing commodo ullamco. Elit culpa elit esse enim et.\r\n",
-                            PasswordHash = new byte[] { 56, 198, 119, 175, 165, 243, 108, 38, 152, 192, 32, 107, 100, 39, 110, 141, 5, 136, 24, 176, 117, 87, 136, 57, 238, 9, 170, 85, 168, 115, 110, 191, 177, 251, 193, 220, 140, 224, 159, 30, 49, 134, 75, 237, 234, 89, 122, 170, 153, 26, 82, 123, 87, 33, 247, 147, 112, 79, 0, 124, 125, 125, 144, 147 },
-                            PasswordSalt = new byte[] { 53, 135, 166, 130, 107, 233, 222, 115, 63, 103, 195, 238, 23, 48, 108, 185, 234, 189, 49, 107, 56, 95, 25, 63, 162, 35, 10, 146, 185, 192, 247, 228, 140, 153, 78, 81, 72, 47, 124, 137, 11, 9, 121, 89, 87, 105, 108, 46, 28, 125, 74, 225, 9, 213, 7, 156, 53, 125, 118, 182, 119, 233, 27, 95, 118, 118, 243, 140, 229, 118, 37, 47, 155, 100, 179, 213, 33, 33, 180, 125, 244, 213, 52, 10, 76, 31, 80, 202, 96, 70, 51, 160, 148, 110, 67, 237, 13, 50, 41, 44, 8, 117, 135, 199, 170, 199, 147, 149, 94, 46, 77, 223, 170, 163, 144, 99, 26, 186, 50, 93, 151, 216, 246, 140, 176, 215, 226, 64 },
+                            PasswordHash = new byte[] { 192, 22, 160, 209, 46, 155, 228, 105, 183, 200, 84, 65, 56, 130, 100, 230, 170, 78, 179, 73, 135, 161, 99, 251, 166, 32, 199, 12, 98, 167, 130, 105, 108, 105, 52, 168, 44, 206, 79, 149, 19, 103, 218, 160, 97, 108, 69, 74, 255, 179, 125, 87, 49, 52, 75, 238, 228, 164, 14, 101, 110, 93, 123, 184 },
+                            PasswordSalt = new byte[] { 120, 69, 127, 25, 82, 57, 163, 151, 151, 210, 92, 245, 90, 172, 206, 120, 115, 61, 86, 237, 54, 253, 225, 32, 240, 180, 159, 46, 42, 131, 128, 127, 119, 18, 128, 107, 233, 120, 59, 109, 6, 65, 80, 1, 21, 250, 99, 62, 51, 104, 216, 112, 75, 39, 200, 203, 225, 54, 109, 152, 252, 12, 80, 210, 80, 26, 139, 86, 102, 183, 247, 85, 172, 104, 81, 163, 226, 227, 131, 232, 145, 93, 102, 171, 249, 209, 1, 183, 198, 214, 218, 95, 178, 154, 199, 164, 65, 12, 118, 118, 119, 63, 89, 166, 159, 54, 152, 238, 11, 204, 84, 216, 126, 109, 110, 132, 161, 86, 75, 5, 24, 77, 25, 19, 118, 239, 223, 209 },
                             UserName = "Eugenia"
                         },
                         new
@@ -172,8 +175,8 @@ namespace Run_Partner.Migrations
                             KnownAs = "Crawford",
                             LastActive = new DateTime(2023, 8, 8, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             LookingFor = "Officia ullamco tempor magna eu do cupidatat cillum do. Nisi irure ea aliqua dolor culpa ea cillum Lorem enim. Cillum tempor eu cupidatat qui aute tempor excepteur incididunt eu tempor. Id elit laboris duis ex esse magna qui. Anim Lorem adipisicing dolor anim occaecat aute veniam sint excepteur. Laborum ut sunt ut magna ad consequat enim. Sint cupidatat qui excepteur mollit proident irure veniam in duis excepteur consequat.\r\n",
-                            PasswordHash = new byte[] { 56, 198, 119, 175, 165, 243, 108, 38, 152, 192, 32, 107, 100, 39, 110, 141, 5, 136, 24, 176, 117, 87, 136, 57, 238, 9, 170, 85, 168, 115, 110, 191, 177, 251, 193, 220, 140, 224, 159, 30, 49, 134, 75, 237, 234, 89, 122, 170, 153, 26, 82, 123, 87, 33, 247, 147, 112, 79, 0, 124, 125, 125, 144, 147 },
-                            PasswordSalt = new byte[] { 53, 135, 166, 130, 107, 233, 222, 115, 63, 103, 195, 238, 23, 48, 108, 185, 234, 189, 49, 107, 56, 95, 25, 63, 162, 35, 10, 146, 185, 192, 247, 228, 140, 153, 78, 81, 72, 47, 124, 137, 11, 9, 121, 89, 87, 105, 108, 46, 28, 125, 74, 225, 9, 213, 7, 156, 53, 125, 118, 182, 119, 233, 27, 95, 118, 118, 243, 140, 229, 118, 37, 47, 155, 100, 179, 213, 33, 33, 180, 125, 244, 213, 52, 10, 76, 31, 80, 202, 96, 70, 51, 160, 148, 110, 67, 237, 13, 50, 41, 44, 8, 117, 135, 199, 170, 199, 147, 149, 94, 46, 77, 223, 170, 163, 144, 99, 26, 186, 50, 93, 151, 216, 246, 140, 176, 215, 226, 64 },
+                            PasswordHash = new byte[] { 192, 22, 160, 209, 46, 155, 228, 105, 183, 200, 84, 65, 56, 130, 100, 230, 170, 78, 179, 73, 135, 161, 99, 251, 166, 32, 199, 12, 98, 167, 130, 105, 108, 105, 52, 168, 44, 206, 79, 149, 19, 103, 218, 160, 97, 108, 69, 74, 255, 179, 125, 87, 49, 52, 75, 238, 228, 164, 14, 101, 110, 93, 123, 184 },
+                            PasswordSalt = new byte[] { 120, 69, 127, 25, 82, 57, 163, 151, 151, 210, 92, 245, 90, 172, 206, 120, 115, 61, 86, 237, 54, 253, 225, 32, 240, 180, 159, 46, 42, 131, 128, 127, 119, 18, 128, 107, 233, 120, 59, 109, 6, 65, 80, 1, 21, 250, 99, 62, 51, 104, 216, 112, 75, 39, 200, 203, 225, 54, 109, 152, 252, 12, 80, 210, 80, 26, 139, 86, 102, 183, 247, 85, 172, 104, 81, 163, 226, 227, 131, 232, 145, 93, 102, 171, 249, 209, 1, 183, 198, 214, 218, 95, 178, 154, 199, 164, 65, 12, 118, 118, 119, 63, 89, 166, 159, 54, 152, 238, 11, 204, 84, 216, 126, 109, 110, 132, 161, 86, 75, 5, 24, 77, 25, 19, 118, 239, 223, 209 },
                             UserName = "Crawford"
                         },
                         new
@@ -188,8 +191,8 @@ namespace Run_Partner.Migrations
                             KnownAs = "Leblanc",
                             LastActive = new DateTime(2022, 7, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             LookingFor = "Aute ipsum ex nostrud dolore ad sint. Lorem id nisi irure laboris aliqua officia pariatur cupidatat exercitation irure. Enim in dolore nostrud nisi occaecat dolor exercitation culpa dolore. Magna tempor laborum sunt velit fugiat qui. Duis proident velit deserunt eiusmod mollit aliqua nostrud duis.\r\n",
-                            PasswordHash = new byte[] { 56, 198, 119, 175, 165, 243, 108, 38, 152, 192, 32, 107, 100, 39, 110, 141, 5, 136, 24, 176, 117, 87, 136, 57, 238, 9, 170, 85, 168, 115, 110, 191, 177, 251, 193, 220, 140, 224, 159, 30, 49, 134, 75, 237, 234, 89, 122, 170, 153, 26, 82, 123, 87, 33, 247, 147, 112, 79, 0, 124, 125, 125, 144, 147 },
-                            PasswordSalt = new byte[] { 53, 135, 166, 130, 107, 233, 222, 115, 63, 103, 195, 238, 23, 48, 108, 185, 234, 189, 49, 107, 56, 95, 25, 63, 162, 35, 10, 146, 185, 192, 247, 228, 140, 153, 78, 81, 72, 47, 124, 137, 11, 9, 121, 89, 87, 105, 108, 46, 28, 125, 74, 225, 9, 213, 7, 156, 53, 125, 118, 182, 119, 233, 27, 95, 118, 118, 243, 140, 229, 118, 37, 47, 155, 100, 179, 213, 33, 33, 180, 125, 244, 213, 52, 10, 76, 31, 80, 202, 96, 70, 51, 160, 148, 110, 67, 237, 13, 50, 41, 44, 8, 117, 135, 199, 170, 199, 147, 149, 94, 46, 77, 223, 170, 163, 144, 99, 26, 186, 50, 93, 151, 216, 246, 140, 176, 215, 226, 64 },
+                            PasswordHash = new byte[] { 192, 22, 160, 209, 46, 155, 228, 105, 183, 200, 84, 65, 56, 130, 100, 230, 170, 78, 179, 73, 135, 161, 99, 251, 166, 32, 199, 12, 98, 167, 130, 105, 108, 105, 52, 168, 44, 206, 79, 149, 19, 103, 218, 160, 97, 108, 69, 74, 255, 179, 125, 87, 49, 52, 75, 238, 228, 164, 14, 101, 110, 93, 123, 184 },
+                            PasswordSalt = new byte[] { 120, 69, 127, 25, 82, 57, 163, 151, 151, 210, 92, 245, 90, 172, 206, 120, 115, 61, 86, 237, 54, 253, 225, 32, 240, 180, 159, 46, 42, 131, 128, 127, 119, 18, 128, 107, 233, 120, 59, 109, 6, 65, 80, 1, 21, 250, 99, 62, 51, 104, 216, 112, 75, 39, 200, 203, 225, 54, 109, 152, 252, 12, 80, 210, 80, 26, 139, 86, 102, 183, 247, 85, 172, 104, 81, 163, 226, 227, 131, 232, 145, 93, 102, 171, 249, 209, 1, 183, 198, 214, 218, 95, 178, 154, 199, 164, 65, 12, 118, 118, 119, 63, 89, 166, 159, 54, 152, 238, 11, 204, 84, 216, 126, 109, 110, 132, 161, 86, 75, 5, 24, 77, 25, 19, 118, 239, 223, 209 },
                             UserName = "Leblanc"
                         },
                         new
@@ -204,8 +207,8 @@ namespace Run_Partner.Migrations
                             KnownAs = "Scott",
                             LastActive = new DateTime(2021, 6, 29, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             LookingFor = "Sunt tempor voluptate id nulla dolore aliquip enim enim occaecat occaecat Lorem ex dolore. Aliqua excepteur Lorem ut laborum proident pariatur incididunt nulla. Non veniam ad adipisicing sunt dolor labore dolore. Cillum sunt culpa duis nulla tempor. Amet mollit ea ex magna. Officia non tempor magna aute irure anim adipisicing. Amet culpa nostrud voluptate laborum.\r\n",
-                            PasswordHash = new byte[] { 56, 198, 119, 175, 165, 243, 108, 38, 152, 192, 32, 107, 100, 39, 110, 141, 5, 136, 24, 176, 117, 87, 136, 57, 238, 9, 170, 85, 168, 115, 110, 191, 177, 251, 193, 220, 140, 224, 159, 30, 49, 134, 75, 237, 234, 89, 122, 170, 153, 26, 82, 123, 87, 33, 247, 147, 112, 79, 0, 124, 125, 125, 144, 147 },
-                            PasswordSalt = new byte[] { 53, 135, 166, 130, 107, 233, 222, 115, 63, 103, 195, 238, 23, 48, 108, 185, 234, 189, 49, 107, 56, 95, 25, 63, 162, 35, 10, 146, 185, 192, 247, 228, 140, 153, 78, 81, 72, 47, 124, 137, 11, 9, 121, 89, 87, 105, 108, 46, 28, 125, 74, 225, 9, 213, 7, 156, 53, 125, 118, 182, 119, 233, 27, 95, 118, 118, 243, 140, 229, 118, 37, 47, 155, 100, 179, 213, 33, 33, 180, 125, 244, 213, 52, 10, 76, 31, 80, 202, 96, 70, 51, 160, 148, 110, 67, 237, 13, 50, 41, 44, 8, 117, 135, 199, 170, 199, 147, 149, 94, 46, 77, 223, 170, 163, 144, 99, 26, 186, 50, 93, 151, 216, 246, 140, 176, 215, 226, 64 },
+                            PasswordHash = new byte[] { 192, 22, 160, 209, 46, 155, 228, 105, 183, 200, 84, 65, 56, 130, 100, 230, 170, 78, 179, 73, 135, 161, 99, 251, 166, 32, 199, 12, 98, 167, 130, 105, 108, 105, 52, 168, 44, 206, 79, 149, 19, 103, 218, 160, 97, 108, 69, 74, 255, 179, 125, 87, 49, 52, 75, 238, 228, 164, 14, 101, 110, 93, 123, 184 },
+                            PasswordSalt = new byte[] { 120, 69, 127, 25, 82, 57, 163, 151, 151, 210, 92, 245, 90, 172, 206, 120, 115, 61, 86, 237, 54, 253, 225, 32, 240, 180, 159, 46, 42, 131, 128, 127, 119, 18, 128, 107, 233, 120, 59, 109, 6, 65, 80, 1, 21, 250, 99, 62, 51, 104, 216, 112, 75, 39, 200, 203, 225, 54, 109, 152, 252, 12, 80, 210, 80, 26, 139, 86, 102, 183, 247, 85, 172, 104, 81, 163, 226, 227, 131, 232, 145, 93, 102, 171, 249, 209, 1, 183, 198, 214, 218, 95, 178, 154, 199, 164, 65, 12, 118, 118, 119, 63, 89, 166, 159, 54, 152, 238, 11, 204, 84, 216, 126, 109, 110, 132, 161, 86, 75, 5, 24, 77, 25, 19, 118, 239, 223, 209 },
                             UserName = "Scott"
                         });
                 });
@@ -236,64 +239,6 @@ namespace Run_Partner.Migrations
                     b.HasIndex("AppUserId");
 
                     b.ToTable("Photos");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = -1,
-                            AppUserId = -1,
-                            IsMain = true,
-                            Url = "https://randomuser.me/api/portraits/women/10.jpg"
-                        },
-                        new
-                        {
-                            Id = -2,
-                            AppUserId = -2,
-                            IsMain = true,
-                            Url = "https://randomuser.me/api/portraits/women/20.jpg"
-                        },
-                        new
-                        {
-                            Id = -3,
-                            AppUserId = -3,
-                            IsMain = true,
-                            Url = "https://randomuser.me/api/portraits/women/30.jpg"
-                        },
-                        new
-                        {
-                            Id = -4,
-                            AppUserId = -4,
-                            IsMain = true,
-                            Url = "https://randomuser.me/api/portraits/women/40.jpg"
-                        },
-                        new
-                        {
-                            Id = -5,
-                            AppUserId = -5,
-                            IsMain = true,
-                            Url = "https://randomuser.me/api/portraits/women/50.jpg"
-                        },
-                        new
-                        {
-                            Id = -6,
-                            AppUserId = -6,
-                            IsMain = true,
-                            Url = "https://randomuser.me/api/portraits/men/10.jpg"
-                        },
-                        new
-                        {
-                            Id = -7,
-                            AppUserId = -7,
-                            IsMain = true,
-                            Url = "https://randomuser.me/api/portraits/men/20.jpg"
-                        },
-                        new
-                        {
-                            Id = -8,
-                            AppUserId = -8,
-                            IsMain = true,
-                            Url = "https://randomuser.me/api/portraits/men/30.jpg"
-                        });
                 });
 
             modelBuilder.Entity("Run_Partner.Models.Photo", b =>

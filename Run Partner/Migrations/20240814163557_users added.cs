@@ -1,0 +1,93 @@
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
+
+#nullable disable
+
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
+namespace Run_Partner.Migrations
+{
+    /// <inheritdoc />
+    public partial class usersadded : Migration
+    {
+        /// <inheritdoc />
+        protected override void Up(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.CreateTable(
+                name: "Users",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PasswordHash = table.Column<byte[]>(type: "varbinary(max)", nullable: false),
+                    PasswordSalt = table.Column<byte[]>(type: "varbinary(max)", nullable: false),
+                    DateOfBirth = table.Column<DateOnly>(type: "date", nullable: false),
+                    KnownAs = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Created = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    LastActive = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Gender = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Introduction = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    City = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Country = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    LookingFor = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Users", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Photos",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Url = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IsMain = table.Column<bool>(type: "bit", nullable: false),
+                    PublicId = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    AppUserId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Photos", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Photos_Users_AppUserId",
+                        column: x => x.AppUserId,
+                        principalTable: "Users",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.InsertData(
+                table: "Users",
+                columns: new[] { "Id", "City", "Country", "Created", "DateOfBirth", "Gender", "Introduction", "KnownAs", "LastActive", "LookingFor", "PasswordHash", "PasswordSalt", "UserName" },
+                values: new object[,]
+                {
+                    { -8, "Hickory", "Lithuania", new DateTime(2020, 9, 19, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateOnly(1994, 4, 27), "male", "Non mollit in ad aute eiusmod nulla aute tempor proident. Reprehenderit occaecat laboris ipsum esse reprehenderit sunt irure tempor in irure dolore cillum. Mollit ullamco voluptate magna laborum do do veniam dolor aliqua culpa ea reprehenderit voluptate ut.\r\n", "Scott", new DateTime(2021, 6, 29, 0, 0, 0, 0, DateTimeKind.Unspecified), "Sunt tempor voluptate id nulla dolore aliquip enim enim occaecat occaecat Lorem ex dolore. Aliqua excepteur Lorem ut laborum proident pariatur incididunt nulla. Non veniam ad adipisicing sunt dolor labore dolore. Cillum sunt culpa duis nulla tempor. Amet mollit ea ex magna. Officia non tempor magna aute irure anim adipisicing. Amet culpa nostrud voluptate laborum.\r\n", new byte[] { 192, 22, 160, 209, 46, 155, 228, 105, 183, 200, 84, 65, 56, 130, 100, 230, 170, 78, 179, 73, 135, 161, 99, 251, 166, 32, 199, 12, 98, 167, 130, 105, 108, 105, 52, 168, 44, 206, 79, 149, 19, 103, 218, 160, 97, 108, 69, 74, 255, 179, 125, 87, 49, 52, 75, 238, 228, 164, 14, 101, 110, 93, 123, 184 }, new byte[] { 120, 69, 127, 25, 82, 57, 163, 151, 151, 210, 92, 245, 90, 172, 206, 120, 115, 61, 86, 237, 54, 253, 225, 32, 240, 180, 159, 46, 42, 131, 128, 127, 119, 18, 128, 107, 233, 120, 59, 109, 6, 65, 80, 1, 21, 250, 99, 62, 51, 104, 216, 112, 75, 39, 200, 203, 225, 54, 109, 152, 252, 12, 80, 210, 80, 26, 139, 86, 102, 183, 247, 85, 172, 104, 81, 163, 226, 227, 131, 232, 145, 93, 102, 171, 249, 209, 1, 183, 198, 214, 218, 95, 178, 154, 199, 164, 65, 12, 118, 118, 119, 63, 89, 166, 159, 54, 152, 238, 11, 204, 84, 216, 126, 109, 110, 132, 161, 86, 75, 5, 24, 77, 25, 19, 118, 239, 223, 209 }, "Scott" },
+                    { -7, "Shady Grove", "Greece", new DateTime(2019, 1, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateOnly(1952, 1, 29), "male", "Dolore dolor anim velit esse consequat id aute voluptate. Adipisicing aliqua ea sunt consectetur et aliqua excepteur. In nulla dolore exercitation ea aliqua fugiat irure in eiusmod exercitation aute occaecat esse. Sint dolore nostrud adipisicing nostrud consequat duis veniam nisi qui nulla.\r\n", "Leblanc", new DateTime(2022, 7, 17, 0, 0, 0, 0, DateTimeKind.Unspecified), "Aute ipsum ex nostrud dolore ad sint. Lorem id nisi irure laboris aliqua officia pariatur cupidatat exercitation irure. Enim in dolore nostrud nisi occaecat dolor exercitation culpa dolore. Magna tempor laborum sunt velit fugiat qui. Duis proident velit deserunt eiusmod mollit aliqua nostrud duis.\r\n", new byte[] { 192, 22, 160, 209, 46, 155, 228, 105, 183, 200, 84, 65, 56, 130, 100, 230, 170, 78, 179, 73, 135, 161, 99, 251, 166, 32, 199, 12, 98, 167, 130, 105, 108, 105, 52, 168, 44, 206, 79, 149, 19, 103, 218, 160, 97, 108, 69, 74, 255, 179, 125, 87, 49, 52, 75, 238, 228, 164, 14, 101, 110, 93, 123, 184 }, new byte[] { 120, 69, 127, 25, 82, 57, 163, 151, 151, 210, 92, 245, 90, 172, 206, 120, 115, 61, 86, 237, 54, 253, 225, 32, 240, 180, 159, 46, 42, 131, 128, 127, 119, 18, 128, 107, 233, 120, 59, 109, 6, 65, 80, 1, 21, 250, 99, 62, 51, 104, 216, 112, 75, 39, 200, 203, 225, 54, 109, 152, 252, 12, 80, 210, 80, 26, 139, 86, 102, 183, 247, 85, 172, 104, 81, 163, 226, 227, 131, 232, 145, 93, 102, 171, 249, 209, 1, 183, 198, 214, 218, 95, 178, 154, 199, 164, 65, 12, 118, 118, 119, 63, 89, 166, 159, 54, 152, 238, 11, 204, 84, 216, 126, 109, 110, 132, 161, 86, 75, 5, 24, 77, 25, 19, 118, 239, 223, 209 }, "Leblanc" },
+                    { -6, "Defiance", "Senegal", new DateTime(2019, 12, 18, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateOnly(1985, 2, 25), "male", "Laboris consequat ut eu mollit dolore sint aliquip. Pariatur ea minim et anim mollit sint sunt ullamco velit officia. Excepteur excepteur aliqua aliquip proident anim ipsum cupidatat eu non culpa sint dolor anim veniam. Cupidatat id nostrud voluptate excepteur. Reprehenderit Lorem excepteur quis qui sunt.\r\n", "Crawford", new DateTime(2023, 8, 8, 0, 0, 0, 0, DateTimeKind.Unspecified), "Officia ullamco tempor magna eu do cupidatat cillum do. Nisi irure ea aliqua dolor culpa ea cillum Lorem enim. Cillum tempor eu cupidatat qui aute tempor excepteur incididunt eu tempor. Id elit laboris duis ex esse magna qui. Anim Lorem adipisicing dolor anim occaecat aute veniam sint excepteur. Laborum ut sunt ut magna ad consequat enim. Sint cupidatat qui excepteur mollit proident irure veniam in duis excepteur consequat.\r\n", new byte[] { 192, 22, 160, 209, 46, 155, 228, 105, 183, 200, 84, 65, 56, 130, 100, 230, 170, 78, 179, 73, 135, 161, 99, 251, 166, 32, 199, 12, 98, 167, 130, 105, 108, 105, 52, 168, 44, 206, 79, 149, 19, 103, 218, 160, 97, 108, 69, 74, 255, 179, 125, 87, 49, 52, 75, 238, 228, 164, 14, 101, 110, 93, 123, 184 }, new byte[] { 120, 69, 127, 25, 82, 57, 163, 151, 151, 210, 92, 245, 90, 172, 206, 120, 115, 61, 86, 237, 54, 253, 225, 32, 240, 180, 159, 46, 42, 131, 128, 127, 119, 18, 128, 107, 233, 120, 59, 109, 6, 65, 80, 1, 21, 250, 99, 62, 51, 104, 216, 112, 75, 39, 200, 203, 225, 54, 109, 152, 252, 12, 80, 210, 80, 26, 139, 86, 102, 183, 247, 85, 172, 104, 81, 163, 226, 227, 131, 232, 145, 93, 102, 171, 249, 209, 1, 183, 198, 214, 218, 95, 178, 154, 199, 164, 65, 12, 118, 118, 119, 63, 89, 166, 159, 54, 152, 238, 11, 204, 84, 216, 126, 109, 110, 132, 161, 86, 75, 5, 24, 77, 25, 19, 118, 239, 223, 209 }, "Crawford" },
+                    { -5, "Veyo", "South Africa", new DateTime(2022, 8, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateOnly(1959, 6, 3), "female", "Sunt ipsum non laborum ea eu excepteur nulla. Excepteur Lorem sint dolor ut sint ipsum incididunt id dolore. Consectetur aute sit in ut nisi sint consectetur.\r\n", "Eugenia", new DateTime(2021, 9, 8, 0, 0, 0, 0, DateTimeKind.Unspecified), "Sit Lorem non adipisicing aute reprehenderit. Aute sunt consequat officia ullamco cupidatat ex laborum sunt exercitation qui nulla tempor mollit. Exercitation Lorem adipisicing sit occaecat cillum irure. Sint esse ea ex quis eu. Officia eu et ea minim reprehenderit excepteur pariatur aliquip culpa ullamco aute. Anim incididunt exercitation magna enim aute Lorem id culpa consequat adipisicing commodo ullamco. Elit culpa elit esse enim et.\r\n", new byte[] { 192, 22, 160, 209, 46, 155, 228, 105, 183, 200, 84, 65, 56, 130, 100, 230, 170, 78, 179, 73, 135, 161, 99, 251, 166, 32, 199, 12, 98, 167, 130, 105, 108, 105, 52, 168, 44, 206, 79, 149, 19, 103, 218, 160, 97, 108, 69, 74, 255, 179, 125, 87, 49, 52, 75, 238, 228, 164, 14, 101, 110, 93, 123, 184 }, new byte[] { 120, 69, 127, 25, 82, 57, 163, 151, 151, 210, 92, 245, 90, 172, 206, 120, 115, 61, 86, 237, 54, 253, 225, 32, 240, 180, 159, 46, 42, 131, 128, 127, 119, 18, 128, 107, 233, 120, 59, 109, 6, 65, 80, 1, 21, 250, 99, 62, 51, 104, 216, 112, 75, 39, 200, 203, 225, 54, 109, 152, 252, 12, 80, 210, 80, 26, 139, 86, 102, 183, 247, 85, 172, 104, 81, 163, 226, 227, 131, 232, 145, 93, 102, 171, 249, 209, 1, 183, 198, 214, 218, 95, 178, 154, 199, 164, 65, 12, 118, 118, 119, 63, 89, 166, 159, 54, 152, 238, 11, 204, 84, 216, 126, 109, 110, 132, 161, 86, 75, 5, 24, 77, 25, 19, 118, 239, 223, 209 }, "Eugenia" },
+                    { -4, "Jenkinsville", "Latvia", new DateTime(2020, 5, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateOnly(1983, 11, 24), "female", "Amet nisi ipsum aliquip reprehenderit excepteur eu ea et quis tempor. Proident officia pariatur mollit cupidatat nulla deserunt adipisicing ut velit. Labore eiusmod consequat esse ipsum elit est proident occaecat Lorem ut amet officia. Dolore adipisicing labore eu cillum id id consectetur enim consequat velit labore mollit proident.\r\n", "Josie", new DateTime(2021, 11, 4, 0, 0, 0, 0, DateTimeKind.Unspecified), "Anim id eiusmod exercitation aliqua non reprehenderit culpa ea veniam aliquip culpa officia adipisicing. Sunt in velit fugiat laboris pariatur dolore officia proident et cillum excepteur. Occaecat nostrud id sit enim esse proident fugiat ipsum elit eu exercitation mollit mollit nulla. Aute irure consectetur do reprehenderit id. Cillum mollit ex tempor ea minim cupidatat aute fugiat Lorem id reprehenderit ut laborum deserunt. Adipisicing consectetur labore ad officia nisi consectetur.\r\n", new byte[] { 192, 22, 160, 209, 46, 155, 228, 105, 183, 200, 84, 65, 56, 130, 100, 230, 170, 78, 179, 73, 135, 161, 99, 251, 166, 32, 199, 12, 98, 167, 130, 105, 108, 105, 52, 168, 44, 206, 79, 149, 19, 103, 218, 160, 97, 108, 69, 74, 255, 179, 125, 87, 49, 52, 75, 238, 228, 164, 14, 101, 110, 93, 123, 184 }, new byte[] { 120, 69, 127, 25, 82, 57, 163, 151, 151, 210, 92, 245, 90, 172, 206, 120, 115, 61, 86, 237, 54, 253, 225, 32, 240, 180, 159, 46, 42, 131, 128, 127, 119, 18, 128, 107, 233, 120, 59, 109, 6, 65, 80, 1, 21, 250, 99, 62, 51, 104, 216, 112, 75, 39, 200, 203, 225, 54, 109, 152, 252, 12, 80, 210, 80, 26, 139, 86, 102, 183, 247, 85, 172, 104, 81, 163, 226, 227, 131, 232, 145, 93, 102, 171, 249, 209, 1, 183, 198, 214, 218, 95, 178, 154, 199, 164, 65, 12, 118, 118, 119, 63, 89, 166, 159, 54, 152, 238, 11, 204, 84, 216, 126, 109, 110, 132, 161, 86, 75, 5, 24, 77, 25, 19, 118, 239, 223, 209 }, "Josie" },
+                    { -3, "Rutherford", "Mauritania", new DateTime(2021, 4, 28, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateOnly(1961, 7, 13), "female", "Non quis anim eiusmod excepteur cupidatat exercitation aute. Id tempor minim non commodo. Aliquip ipsum Lorem id deserunt aliqua reprehenderit nisi ad. Tempor laboris incididunt aute labore amet velit sit. Tempor consectetur nostrud nisi ad aute commodo. Velit aliquip ipsum est pariatur et in cupidatat ad et labore tempor cupidatat proident aute. Non sit enim ut labore qui eiusmod labore enim fugiat aliquip laborum.\r\n", "Cherie", new DateTime(2023, 7, 30, 0, 0, 0, 0, DateTimeKind.Unspecified), "Eu sint enim laborum nisi nostrud do cillum adipisicing enim voluptate sunt velit. Excepteur amet ut aliqua excepteur dolor non ipsum aute anim ex proident consequat aliquip. Ex anim excepteur minim veniam eiusmod adipisicing. Exercitation magna aliquip excepteur esse et deserunt fugiat labore. Nostrud ex magna cupidatat magna ullamco dolore veniam anim. Cupidatat pariatur adipisicing veniam proident duis.\r\n", new byte[] { 192, 22, 160, 209, 46, 155, 228, 105, 183, 200, 84, 65, 56, 130, 100, 230, 170, 78, 179, 73, 135, 161, 99, 251, 166, 32, 199, 12, 98, 167, 130, 105, 108, 105, 52, 168, 44, 206, 79, 149, 19, 103, 218, 160, 97, 108, 69, 74, 255, 179, 125, 87, 49, 52, 75, 238, 228, 164, 14, 101, 110, 93, 123, 184 }, new byte[] { 120, 69, 127, 25, 82, 57, 163, 151, 151, 210, 92, 245, 90, 172, 206, 120, 115, 61, 86, 237, 54, 253, 225, 32, 240, 180, 159, 46, 42, 131, 128, 127, 119, 18, 128, 107, 233, 120, 59, 109, 6, 65, 80, 1, 21, 250, 99, 62, 51, 104, 216, 112, 75, 39, 200, 203, 225, 54, 109, 152, 252, 12, 80, 210, 80, 26, 139, 86, 102, 183, 247, 85, 172, 104, 81, 163, 226, 227, 131, 232, 145, 93, 102, 171, 249, 209, 1, 183, 198, 214, 218, 95, 178, 154, 199, 164, 65, 12, 118, 118, 119, 63, 89, 166, 159, 54, 152, 238, 11, 204, 84, 216, 126, 109, 110, 132, 161, 86, 75, 5, 24, 77, 25, 19, 118, 239, 223, 209 }, "Cherie" },
+                    { -2, "Olney", "Denmark", new DateTime(2019, 4, 7, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateOnly(1956, 2, 2), "female", "Enim veniam magna sunt dolore commodo. Lorem laboris sit laboris incididunt proident laboris incididunt deserunt elit pariatur cupidatat cupidatat minim ullamco. Velit aliqua laborum nulla reprehenderit irure nisi nisi incididunt in non elit irure.\r\n", "Sasha", new DateTime(2022, 3, 13, 0, 0, 0, 0, DateTimeKind.Unspecified), "Laboris aliquip exercitation pariatur laborum veniam cillum est eiusmod. Elit enim aliquip ex qui mollit et Lorem voluptate reprehenderit dolore Lorem Lorem cillum quis. Quis eiusmod ea duis minim non voluptate quis Lorem. Velit nulla quis ullamco incididunt non ad ea do ad incididunt mollit ut ad magna. Dolor cupidatat ad exercitation consequat exercitation aute et adipisicing amet ipsum dolore consequat esse. Minim do laborum ullamco consequat proident aliqua incididunt nulla.\r\n", new byte[] { 192, 22, 160, 209, 46, 155, 228, 105, 183, 200, 84, 65, 56, 130, 100, 230, 170, 78, 179, 73, 135, 161, 99, 251, 166, 32, 199, 12, 98, 167, 130, 105, 108, 105, 52, 168, 44, 206, 79, 149, 19, 103, 218, 160, 97, 108, 69, 74, 255, 179, 125, 87, 49, 52, 75, 238, 228, 164, 14, 101, 110, 93, 123, 184 }, new byte[] { 120, 69, 127, 25, 82, 57, 163, 151, 151, 210, 92, 245, 90, 172, 206, 120, 115, 61, 86, 237, 54, 253, 225, 32, 240, 180, 159, 46, 42, 131, 128, 127, 119, 18, 128, 107, 233, 120, 59, 109, 6, 65, 80, 1, 21, 250, 99, 62, 51, 104, 216, 112, 75, 39, 200, 203, 225, 54, 109, 152, 252, 12, 80, 210, 80, 26, 139, 86, 102, 183, 247, 85, 172, 104, 81, 163, 226, 227, 131, 232, 145, 93, 102, 171, 249, 209, 1, 183, 198, 214, 218, 95, 178, 154, 199, 164, 65, 12, 118, 118, 119, 63, 89, 166, 159, 54, 152, 238, 11, 204, 84, 216, 126, 109, 110, 132, 161, 86, 75, 5, 24, 77, 25, 19, 118, 239, 223, 209 }, "Sasha" },
+                    { -1, "Yonah", "New Zealand", new DateTime(2019, 2, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateOnly(1967, 12, 14), "female", "Eu amet velit nostrud eu irure. Dolor pariatur commodo excepteur occaecat ad. Commodo mollit nulla ullamco sint qui laborum commodo veniam. Ut adipisicing excepteur duis laboris Lorem proident.\r\n", "Rosetta", new DateTime(2024, 10, 21, 0, 0, 0, 0, DateTimeKind.Unspecified), "In velit aliqua aute sint duis deserunt dolore nostrud consequat aute fugiat non. Nisi adipisicing magna qui est adipisicing elit quis sunt labore ut. Dolore ullamco nisi enim proident dolor eu. Exercitation enim deserunt esse do nostrud ex officia nisi et pariatur excepteur anim sit. Laboris sunt aliquip sunt sit sint sunt amet voluptate occaecat. Fugiat pariatur nisi deserunt aliquip exercitation culpa ullamco excepteur.\r\n", new byte[] { 192, 22, 160, 209, 46, 155, 228, 105, 183, 200, 84, 65, 56, 130, 100, 230, 170, 78, 179, 73, 135, 161, 99, 251, 166, 32, 199, 12, 98, 167, 130, 105, 108, 105, 52, 168, 44, 206, 79, 149, 19, 103, 218, 160, 97, 108, 69, 74, 255, 179, 125, 87, 49, 52, 75, 238, 228, 164, 14, 101, 110, 93, 123, 184 }, new byte[] { 120, 69, 127, 25, 82, 57, 163, 151, 151, 210, 92, 245, 90, 172, 206, 120, 115, 61, 86, 237, 54, 253, 225, 32, 240, 180, 159, 46, 42, 131, 128, 127, 119, 18, 128, 107, 233, 120, 59, 109, 6, 65, 80, 1, 21, 250, 99, 62, 51, 104, 216, 112, 75, 39, 200, 203, 225, 54, 109, 152, 252, 12, 80, 210, 80, 26, 139, 86, 102, 183, 247, 85, 172, 104, 81, 163, 226, 227, 131, 232, 145, 93, 102, 171, 249, 209, 1, 183, 198, 214, 218, 95, 178, 154, 199, 164, 65, 12, 118, 118, 119, 63, 89, 166, 159, 54, 152, 238, 11, 204, 84, 216, 126, 109, 110, 132, 161, 86, 75, 5, 24, 77, 25, 19, 118, 239, 223, 209 }, "Rosetta" }
+                });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Photos_AppUserId",
+                table: "Photos",
+                column: "AppUserId");
+        }
+
+        /// <inheritdoc />
+        protected override void Down(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropTable(
+                name: "Photos");
+
+            migrationBuilder.DropTable(
+                name: "Users");
+        }
+    }
+}

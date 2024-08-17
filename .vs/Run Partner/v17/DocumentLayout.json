@@ -3,32 +3,24 @@
   "WorkspaceRootPath": "D:\\.NET\\Run Partner\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|d:\\.net\\run partner\\run partner\\controllers\\buggycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|solutionrelative:run partner\\controllers\\buggycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|d:\\.net\\run partner\\run partner\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|solutionrelative:run partner\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|d:\\.net\\run partner\\run partner\\helpers\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|solutionrelative:run partner\\helpers\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|d:\\.net\\run partner\\run partner\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|solutionrelative:run partner\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|d:\\.net\\run partner\\run partner\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|solutionrelative:run partner\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|d:\\.net\\run partner\\run partner\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|solutionrelative:run partner\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|d:\\.net\\run partner\\run partner\\middleware\\exceptionmiddelware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|solutionrelative:run partner\\middleware\\exceptionmiddelware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|d:\\.net\\run partner\\run partner\\data\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|solutionrelative:run partner\\data\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|d:\\.net\\run partner\\run partner\\errors\\apiexceptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|solutionrelative:run partner\\errors\\apiexceptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|d:\\.net\\run partner\\run partner\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|solutionrelative:run partner\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|d:\\.net\\run partner\\run partner\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D53447E-D29B-457A-9C54-9F36FF1AE7D2}|Run Partner\\Run Partner.csproj|solutionrelative:run partner\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,109 +30,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "D:\\.NET\\Run Partner\\Run Partner\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Run Partner\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "D:\\.NET\\Run Partner\\Run Partner\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "Run Partner\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T14:17:21.605Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RegisterDto.cs",
-              "DocumentMoniker": "D:\\.NET\\Run Partner\\Run Partner\\DTOs\\RegisterDto.cs",
-              "RelativeDocumentMoniker": "Run Partner\\DTOs\\RegisterDto.cs",
-              "ToolTip": "D:\\.NET\\Run Partner\\Run Partner\\DTOs\\RegisterDto.cs",
-              "RelativeToolTip": "Run Partner\\DTOs\\RegisterDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\.NET\\Run Partner\\Run Partner\\Data\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Run Partner\\Data\\UserRepository.cs",
+              "ToolTip": "D:\\.NET\\Run Partner\\Run Partner\\Data\\UserRepository.cs",
+              "RelativeToolTip": "Run Partner\\Data\\UserRepository.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T17:58:51.63Z",
+              "WhenOpened": "2024-08-17T14:16:07.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AutoMapperProfiles.cs",
+              "DocumentMoniker": "D:\\.NET\\Run Partner\\Run Partner\\Helpers\\AutoMapperProfiles.cs",
+              "RelativeDocumentMoniker": "Run Partner\\Helpers\\AutoMapperProfiles.cs",
+              "ToolTip": "D:\\.NET\\Run Partner\\Run Partner\\Helpers\\AutoMapperProfiles.cs",
+              "RelativeToolTip": "Run Partner\\Helpers\\AutoMapperProfiles.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T14:01:43.882Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\.NET\\Run Partner\\Run Partner\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Run Partner\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\.NET\\Run Partner\\Run Partner\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Run Partner\\Controllers\\UsersController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T13:54:55.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "AppUser.cs",
               "DocumentMoniker": "D:\\.NET\\Run Partner\\Run Partner\\Models\\AppUser.cs",
               "RelativeDocumentMoniker": "Run Partner\\Models\\AppUser.cs",
               "ToolTip": "D:\\.NET\\Run Partner\\Run Partner\\Models\\AppUser.cs",
               "RelativeToolTip": "Run Partner\\Models\\AppUser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAASAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAcwB0AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T17:58:23.397Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\.NET\\Run Partner\\Run Partner\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Run Partner\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\.NET\\Run Partner\\Run Partner\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Run Partner\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T17:57:46.807Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BuggyController.cs",
-              "DocumentMoniker": "D:\\.NET\\Run Partner\\Run Partner\\Controllers\\BuggyController.cs",
-              "RelativeDocumentMoniker": "Run Partner\\Controllers\\BuggyController.cs",
-              "ToolTip": "D:\\.NET\\Run Partner\\Run Partner\\Controllers\\BuggyController.cs",
-              "RelativeToolTip": "Run Partner\\Controllers\\BuggyController.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAnwCQAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T15:31:28.48Z",
+              "WhenOpened": "2024-08-17T12:05:58.244Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ExceptionMiddelware.cs",
-              "DocumentMoniker": "D:\\.NET\\Run Partner\\Run Partner\\Middleware\\ExceptionMiddelware.cs",
-              "RelativeDocumentMoniker": "Run Partner\\Middleware\\ExceptionMiddelware.cs",
-              "ToolTip": "D:\\.NET\\Run Partner\\Run Partner\\Middleware\\ExceptionMiddelware.cs",
-              "RelativeToolTip": "Run Partner\\Middleware\\ExceptionMiddelware.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T16:22:57.454Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ApiExceptions.cs",
-              "DocumentMoniker": "D:\\.NET\\Run Partner\\Run Partner\\Errors\\ApiExceptions.cs",
-              "RelativeDocumentMoniker": "Run Partner\\Errors\\ApiExceptions.cs",
-              "ToolTip": "D:\\.NET\\Run Partner\\Run Partner\\Errors\\ApiExceptions.cs",
-              "RelativeToolTip": "Run Partner\\Errors\\ApiExceptions.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T16:19:11.526Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\.NET\\Run Partner\\Run Partner\\Program.cs",
-              "RelativeDocumentMoniker": "Run Partner\\Program.cs",
-              "ToolTip": "D:\\.NET\\Run Partner\\Run Partner\\Program.cs",
-              "RelativeToolTip": "Run Partner\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T17:20:58.973Z"
             }
           ]
         }
