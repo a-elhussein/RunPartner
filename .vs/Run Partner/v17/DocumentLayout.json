@@ -42,8 +42,7 @@
               "RelativeToolTip": "Run Partner\\Interfaces\\IUserRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-17T14:17:21.605Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-17T14:17:21.605Z"
             },
             {
               "$type": "Document",
@@ -55,8 +54,7 @@
               "RelativeToolTip": "Run Partner\\Data\\UserRepository.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAACEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-17T14:16:07.006Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-17T14:16:07.006Z"
             },
             {
               "$type": "Document",
@@ -66,7 +64,7 @@
               "RelativeDocumentMoniker": "Run Partner\\Helpers\\AutoMapperProfiles.cs",
               "ToolTip": "D:\\.NET\\Run Partner\\Run Partner\\Helpers\\AutoMapperProfiles.cs",
               "RelativeToolTip": "Run Partner\\Helpers\\AutoMapperProfiles.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABNAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-17T14:01:43.882Z",
               "EditorCaption": ""
@@ -81,8 +79,7 @@
               "RelativeToolTip": "Run Partner\\Controllers\\UsersController.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAAAAACsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-17T13:54:55.163Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-17T13:54:55.163Z"
             },
             {
               "$type": "Document",
@@ -94,8 +91,7 @@
               "RelativeToolTip": "Run Partner\\Models\\AppUser.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAcwB0AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-17T12:05:58.244Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-17T12:05:58.244Z"
             }
           ]
         }
