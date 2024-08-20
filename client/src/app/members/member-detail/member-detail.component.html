@@ -26,11 +26,8 @@
                 <div class="btn-group d-flex">
                     <button class="btn btn-primary">Like</button>
                     <button class="btn btn-success">Message</button>
-
                 </div>
-
             </div>
-
         </div>
     </div>
 
@@ -42,8 +39,13 @@
                 <h4>Looking For</h4>
                 <p>{{member.lookingFor}}</p>
             </tab>
-            <tab heading="Photos">
-                <p>Photo will go here</p>
+            <tab heading="Photos" #photoTab="tab">
+                @if (photoTab.active) {
+                <gallery [items]="images" class="gallery">
+
+                </gallery>
+                }
+
             </tab>
             <tab heading="Messages">
                 <p>Messages will go here</p>
